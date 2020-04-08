@@ -6,7 +6,7 @@ library(purrr)
 library(lubridate)
 
 #read in csv
-incidents <- read_csv("moco_crash_incident.csv")
+incidents <- read_csv("CrashReporting_-_Incidents_Data.csv")
 head(incidents)
 
 #convert crashdate and time to date time
@@ -26,9 +26,9 @@ crash_count_data <- incidents %>%
   summarize(crash_occurences = sum(crash_count))
 
 #create df of last three years in march from the first to the 19th
-march <- subset(crash_count_data, date_only >= "2020-03-01" & date_only <= "2020-03-19"
-                |date_only >= "2019-03-01" & date_only <= "2019-03-19" 
-                |date_only >= "2018-03-01" & date_only <= "2018-03-19")
+march <- subset(crash_count_data, date_only >= "2020-03-01" & date_only <= "2020-03-30"
+                |date_only >= "2019-03-01" & date_only <= "2019-03-30" 
+                |date_only >= "2018-03-01" & date_only <= "2018-03-30")
 
-write_csv(march, "moco_crashes_march.csv")
+write_csv(march, "mc_crashes_march.csv")
 
