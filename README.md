@@ -14,6 +14,12 @@ Examining doctor and nurse communication skills as evaluated by hosital patients
 
 Building a regression model of multiple factors that may influence a movie's gross earnings
 
+## Tableau - Mock Data Visualizations for Capstone Client
 
+Mock Visualizations that I made using Tableau dashboards for a local parks and recreation organization
+
+## Tableau - Inforgraphic of CARES Act Distribution of Funds
+
+An inforgraphic made overviewing what sort of businesses received funding from the CARES Act and focusing on the top two sectors
 
 
